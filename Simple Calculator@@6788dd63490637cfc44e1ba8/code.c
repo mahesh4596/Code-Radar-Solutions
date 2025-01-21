@@ -3,8 +3,7 @@
 int main() {
     char choice;
     int a,b;
-    scanf("%i %i",&a,&b);
-    scanf("%c",&choice);
+    scanf("%i %i %c",&a,&b,&choice);
     switch(choice)
     {
         case '+':
