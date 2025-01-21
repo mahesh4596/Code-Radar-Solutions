@@ -2,8 +2,8 @@
 
 int main() {
     char choice;
-    int a,b;
-    scanf("%i %i %c",&a,&b,&choice);
+    float a,b;
+    scanf("%f %f %c",&a,&b,&choice);
     switch(choice)
     {
         case '+':
