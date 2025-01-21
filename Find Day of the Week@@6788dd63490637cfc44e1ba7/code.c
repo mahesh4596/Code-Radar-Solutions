@@ -3,7 +3,7 @@
 int main() {
     int choice;
     scanf("%i",&choice);
-    switch(choice)
+    switch(choice);
     {
         case 1:
             printf("Monday");
