@@ -17,7 +17,7 @@ int main() {
         case 6:
         case 9:
         case 11:
-            printf("30"):
+            printf("30");
             break;
         case 2:
             printf("28");
