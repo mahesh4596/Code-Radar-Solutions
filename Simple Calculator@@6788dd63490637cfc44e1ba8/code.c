@@ -13,8 +13,8 @@ int main() {
           printf("%i",a-b);
           break;
         case '/':
-          printf("%i",a/b);
-          break;
+          if(b!=0)
+            printf("%i",a/b);
         case '*':
           printf("%i",a*b);
           break;
