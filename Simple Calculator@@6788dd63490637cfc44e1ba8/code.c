@@ -8,22 +8,18 @@ int main() {
     switch(choice)
     {
         case '+':
-            scanf("%i %i",&a,&b);
-            printf("%i",a+b);
-            break;
+          printf("%i",a+b);
+          break;
         case '-':
-            scanf("%i %i",&a,&b);
-            printf("%i",a-b);
-            break;
+          printf("%i",a-b);
+          break;
         case '/':
-            scanf("%i %i",&a,&b);
-            printf("%i",a/b);
-            break;
+          printf("%i",a/b);
+          break;
         case '*':
-            scanf("%i %i",&a,&b);
-            printf("%i",a*b);
-            break;
+          printf("%i",a*b);
+          break;
         default:
-            printf("error");
+          printf("error");
     }
 }
