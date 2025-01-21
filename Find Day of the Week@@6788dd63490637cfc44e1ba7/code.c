@@ -2,7 +2,7 @@
 
 int main() {
     int choice;
-    scanf("%i",&choice);
+    scanf("%d",&choice);
     switch(choice)
     {
         case 1:
