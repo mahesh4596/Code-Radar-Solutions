@@ -9,6 +9,6 @@ int main() {
         printf("Divisible by 3\n");
     else if(num%5==0)
         printf("Divisible by 5\n");
-    else
+    else 
         printf("Not Divisble\n");
 }
