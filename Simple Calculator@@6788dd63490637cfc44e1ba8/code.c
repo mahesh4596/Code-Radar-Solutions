@@ -9,16 +9,16 @@ int main() {
     switch(choice)
     {
         case '+':
-            printf("%i",a+b);
+            printf("%d",a+b);
             break;
         case '-':
-            printf("%i",a-b);
+            printf("%d",a-b);
             break;
         case '/':
-            printf("%i",a/b);
+            printf("%d",a/b);
             break;
         case '*':
-            printf("%i",a*b);
+            printf("%d",a*b);
             break;
         default:
             printf("error");
