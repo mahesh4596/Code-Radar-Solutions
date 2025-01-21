@@ -22,5 +22,7 @@ int main() {
             scanf("%i %i",&a,&b);
             printf("%i",a*b);
             break;
+        default:
+            printf("error");
     }
 }
