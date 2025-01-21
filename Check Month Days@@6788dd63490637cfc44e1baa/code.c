@@ -2,6 +2,7 @@
 
 int main() {
     int choice;
+    scanf("%i",&choice);
     if(choice>=1 && choice<=12)
     {
         switch(choice)
