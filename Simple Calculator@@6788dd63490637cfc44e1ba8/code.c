@@ -22,7 +22,7 @@ int main() {
             if (a==0 || b==0)
                 printf("");
             else
-                printf("%.2f",a/b);
+                printf("%.0f",a/b);
             break;
         case '*':
             if(a==0 || b==0)
