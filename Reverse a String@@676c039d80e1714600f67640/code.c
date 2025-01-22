@@ -3,7 +3,7 @@
 int main() {
     char a[100],temp;
     int i,j,len;
-    scanf("%s",&a);
+    scanf("%c",&a);
     for(len=0;a[len]!='\o';len++);
     for(i=0,j=len-1;i<len/2;i++,j--)
     {
