@@ -3,10 +3,12 @@
 int main() {
     char i,j,n;
     scanf("%c",&n);
-    for(i='A';i<=n;i++)
+    for(int i=1;i<=n;i++)
     {
-        for(j='A';j<=i;j++){
+        while(j=='A')
+        {
             printf("%c ",j);
+            j++;
         }
         printf("\n");
     }
