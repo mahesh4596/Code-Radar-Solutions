@@ -10,5 +10,5 @@ int main() {
     else if(num%5==0)
         printf("Divisible by 5\n");
     else 
-        printf("Not Divisble");
+        printf("Not Divisible");
 }
