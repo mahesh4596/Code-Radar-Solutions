@@ -7,7 +7,10 @@ int main() {
     switch(choice)
     {
         case '+':
-            printf("%.0f",a+b);
+            if(a<0 || b<0)
+                printf("");
+            else
+                printf("%.0f",a+b);
             break;
         case '-':
             if (a<b)
