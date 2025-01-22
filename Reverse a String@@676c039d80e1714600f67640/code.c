@@ -2,9 +2,10 @@
 
 int main() {
     char a[100],temp;
-    int i,j,len;
+    int i,j,k,len;
     scanf("%s",&a);
-    for(len=0;a[len]!='\o';len++);
+    for(k=0;a[k]!='\o';k++)
+        len++;
     printf("%d", len);
     for(i=0,j=len-1;i<len;i++,j--)
     {
