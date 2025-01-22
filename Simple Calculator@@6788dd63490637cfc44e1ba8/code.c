@@ -13,7 +13,7 @@ int main() {
             printf("%.0f",a-b);
             break;
         case '/':
-            if (b==0)
+            if (a==0 || b==0)
                 printf("");
             else
                 printf("%.0f",a/b);
