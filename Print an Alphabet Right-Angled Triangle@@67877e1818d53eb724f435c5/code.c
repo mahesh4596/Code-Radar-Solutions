@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    char i,j,n;
-    scanf("%c",&n);
+    char i,j;
+    int n;
+    scanf("%i",&n);
     for(int i=1;i<=n;i++)
     {
         while(j=='A')
