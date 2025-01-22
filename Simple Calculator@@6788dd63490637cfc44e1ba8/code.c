@@ -7,28 +7,19 @@ int main() {
     switch(choice)
     {
         case '+':
-            if(a<0 || b<0)
-                printf("");
-            else
-                printf("%.0f",a+b);
+            printf("%.0f",a+b);
             break;
         case '-':
-            if (a<b)
-                printf("");
-            else
-                printf("%.0f",a-b);
+            printf("%.0f",a-b);
             break;
         case '/':
-            if (a==0 || b==0)
+            if (b==0)
                 printf("");
             else
                 printf("%.0f",a/b);
             break;
         case '*':
-            if(a==0 || b==0)
-                printf("");
-            else
-                printf("%.0f",a*b);
+            printf("%.0f",a*b);
             break;
         default:
             printf("error");
