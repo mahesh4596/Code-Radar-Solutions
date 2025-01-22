@@ -10,7 +10,10 @@ int main() {
             printf("%.0f",a+b);
             break;
         case '-':
-            printf("%.0f",a-b);
+            if (a<b)
+                printf("");
+            else
+                printf("%.0f",a-b);
             break;
         case '/':
             if (a==0 || b==0)
