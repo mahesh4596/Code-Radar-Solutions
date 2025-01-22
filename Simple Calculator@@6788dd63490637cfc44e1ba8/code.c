@@ -13,6 +13,8 @@ int main() {
             printf("%.0f",a-b);
             break;
         case '/':
+            if (b==0)
+                printf("error");
             printf("%.0f",a/b);
             break;
         case '*':
