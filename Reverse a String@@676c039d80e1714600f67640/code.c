@@ -5,7 +5,8 @@ int main() {
     int i,j,len;
     scanf("%s",&a);
     for(len=0;a[len]!='\o';len++);
-    for(i=0,j=len-1;i<len/2;i++,j--)
+    printf("%d", len);
+    for(i=0,j=len-1;i<len;i++,j--)
     {
         temp=a[i];
         a[i]=a[j];
