@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    char a[100];
+    char a[100],temp;
+    int i,j,len;
     scanf("%s",&a);
-    for(int i=0;a[i]!='\o';i++);
-    for(int j=0,k=j-1;j<i/2;j++,k--)
+    for(len=0;a[len]!='\o';len++);
+    for(i=0,j=len-1;i<len/2;i++,j--)
     {
-        int temp=a[j];
-        a[j]=a[k];
+        temp=a[i];
+        a[i]=a[j];
         a[j]=temp;
     }
     printf(a);
