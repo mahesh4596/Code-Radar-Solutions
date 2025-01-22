@@ -31,6 +31,6 @@ int main() {
                 printf("%.0f",a*b);
             break;
         default:
-            printf("error");
+            printf("");
     }
 }
