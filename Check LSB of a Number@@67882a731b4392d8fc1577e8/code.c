@@ -3,5 +3,8 @@
 int main() {
     int a;
     scanf("%d",&a);
-    printf("%d",a&1);
+    if(a&1==0)
+        printf("Not Set");
+    else
+        printf("Set");
 }
