@@ -7,8 +7,4 @@ int main() {
         printf("Set");
     else
         printf("Not Set");
-    if((a>>31) == 1)
-        printf("Set");
-    else
-        printf("Not Set");
 }
