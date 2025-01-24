@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
-    char str[100],v=0;
+    char str[100];
+    int v=0;
     scanf("%s",&str);
     for(int i=0;str[i]!='\o';i++)
     {
