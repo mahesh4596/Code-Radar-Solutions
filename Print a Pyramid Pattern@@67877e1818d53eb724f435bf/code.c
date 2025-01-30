@@ -5,10 +5,12 @@ int main() {
     scanf("%i",&n);
     for(i=0;i<=n;i++)
     {
-        for(int k=1;k>=n-i;k++)
+        for(int k=n-i+1;k>=1;k++)
             printf(" ");
         for(j=1;j<=i;j++)
             printf("* ");
+        for(int l=2;l<=i;l++)
+            printf("*");
         printf("\n");
     }
 }
