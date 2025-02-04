@@ -14,6 +14,7 @@ int main() {
                 printf("%.0f",a-b);
             else
                 printf("error");
+            break;
         case '/':
             if (a==0 || b==0)
                 printf("error");
