@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 struct Student
 {
     int rno;
