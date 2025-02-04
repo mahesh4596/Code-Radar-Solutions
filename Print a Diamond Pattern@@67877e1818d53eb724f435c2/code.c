@@ -1,35 +1,40 @@
 #include <stdio.h>
 
 int main() {
-    int rows;
-    scanf("%d", &rows);
-    if(rows%2==0)
-    {
+    int n, i, j, space;
+    scanf("%d", &n);
+
+    if (n % 2 == 0) {
         return 1;
     }
-    for (int i = 1; i <= rows; i += 2) 
+
+    int mid = n / 2;
+
+    for (i = 0; i <= mid; i++) 
     {
-        for (int s = 1; s <= (rows - i) / 2; s++) 
+        for (space = 0; space < mid - i; space++) 
         {
-            printf("  ");
+            printf(" ");
         }
-        for (int j = 1; j <= i; j++) 
+        for (j = 0; j < 2 * i + 1; j++) 
         {
             printf("*");
         }
+        printf("\n");
     }
-    for (int i = rows - 2; i >= 1; i -= 2) 
+
+    for (i = mid - 1; i >= 0; i--) 
+    {
+        for (space = 0; space < mid - i; space++) 
         {
-            for (int s = 1; s <= (rows - i) / 2; s++) 
-            {
-                printf("  ");
-            }
-            for (int j = 1; j <= i; j++) 
-            {
-                printf("* ");
-            }
-            printf("\n");
+            printf(" ");
         }
-    
+        for (j = 0; j < 2 * i + 1; j++) 
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+
     return 0;
 }
