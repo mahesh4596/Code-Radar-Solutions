@@ -10,11 +10,13 @@ int main() {
             printf("%.0f",a+b);
             break;
         case '-':
-            printf("%.0f",a-b);
-            break;
+            if(a>b)
+                printf(".0f",a-b);
+            else
+                printf("error");
         case '/':
-            if (b==0)
-                printf("");
+            if (a==0 || b==0)
+                printf("error");
             else
                 printf("%.0f",a/b);
             break;
@@ -23,6 +25,5 @@ int main() {
             break;
         default:
             printf("error");
-            break;
     }
 }
