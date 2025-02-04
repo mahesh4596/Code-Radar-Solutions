@@ -4,10 +4,6 @@ int main() {
     int n, i, j, space;
     scanf("%d", &n);
 
-    if (n % 2 == 0) {
-        return 1;
-    }
-
     int mid = n / 2;
 
     for (i = 0; i <= mid; i++) 
