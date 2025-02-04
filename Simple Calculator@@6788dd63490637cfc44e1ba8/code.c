@@ -11,7 +11,7 @@ int main() {
             break;
         case '-':
             if(a>b)
-                printf(".0f",a-b);
+                printf("%.0f",a-b);
             else
                 printf("error");
         case '/':
