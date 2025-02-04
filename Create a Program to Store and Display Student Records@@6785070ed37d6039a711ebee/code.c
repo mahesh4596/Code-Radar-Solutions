@@ -1,18 +1,22 @@
 #include <stdio.h>
 struct Student
 {
-    int rno,marks;
+    int rno;
+    float marks;
     char name[100];
 }
 
 int main() {
-    struct Student s1;
     int n;
     scanf("%d",&n);
-    for(int i;i<=n;i++)
+
+    struct Student students[n];
+    for(int i=0;i<n;i++)
     {
-        scanf("%d %s %d",&s1.rno,&s1.name,&s1.marks);
-        printf("\n");
+        scanf("%d %s %f",&students[i].rno,&students[i].name,&students[i].marks);
     }
-    printf("Roll Number: %d, Name: %s, Marks: %d",s1.rno,s1.name,s1.marks);
+    for(int i=0;i<n;i++)
+    {
+        printf("Roll Number: %d, Name: %s, Marks: %.2f\n",students[i].rno,students[i].name,students[i].marks);
+    }
 }
