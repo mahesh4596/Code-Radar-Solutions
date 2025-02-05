@@ -5,7 +5,7 @@ struct Student
     int rno;
     float marks;
     char name[100];
-}
+};
 
 int main() {
     int n;
