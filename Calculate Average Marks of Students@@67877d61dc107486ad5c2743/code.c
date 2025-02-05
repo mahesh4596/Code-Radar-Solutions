@@ -8,12 +8,14 @@ struct Student
 }
 
 int main() {
-    int n;
+    int n,sum=0;
     scanf("%d",&n);
     struct Student students[n];
     for(int i=0;i<n;i++)
     {
         scanf("%d %s %f",&students[i].rno,&students[i].name,&students[i].marks);
+        sum+=students[i].marks;
     }
-    int avg = s
+    float avg = sum/n;
+    printf("Average Marks: %f",avg);
 }
