@@ -1,22 +1,26 @@
 #include <stdio.h>
 
-struct Student
-{
+struct Student {
     int rno;
     char name[100];
     float marks;
 };
 
 int main() {
-    int n,
-    float sum=0;
-    scanf("%d",&n);
+    int n;
+    float sum = 0;
+    scanf("%d", &n);
+
     struct Student students[n];
-    for(int i=0;i<n;i++)
+
+    for(int i = 0; i < n; i++) 
     {
-        scanf("%d %s %f",&students[i].rno,&students[i].name,&students[i].marks);
-        sum+=students.marks[i];
+        scanf("%d %s %f", &students[i].rno, students[i].name, &students[i].marks);
+        sum += students[i].marks;
     }
-    float avg = sum/n;
-    printf("Average Marks: %.2f",avg);
+
+    float avg = sum / n;
+    printf("Average Marks: %.2f\n", avg);
+
+    return 0;
 }
