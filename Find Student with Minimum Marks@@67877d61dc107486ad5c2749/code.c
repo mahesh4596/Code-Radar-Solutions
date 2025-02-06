@@ -24,6 +24,6 @@ int main() {
             minIndex = i;
         }
     }
-    printf("Student with Minimum Marks: Roll Number: %d, Name: %s, Marks: %.2f\n",rollno[minIndex],name[minIndex],marks[minIndex]);
+    printf("Student with Minimum Marks: Roll Number: %d, Name: %s, Marks: %.2f\n",students[minIndex].rollno,students[minIndex].name,students[minIndex].marks);
     return 0;
 }
