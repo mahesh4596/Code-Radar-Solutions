@@ -14,10 +14,10 @@ int main() {
     }
 
     for (int i = 0; i < n; i++) {
-        int area = rectangle[i].length * rectangle[i].breadth;
-        int perimeter = 2 * (rectangle[i].length + rectangle[i].breadth);
+        float area = rectangle[i].length * rectangle[i].breadth;
+        float perimeter = 2 * (rectangle[i].length + rectangle[i].breadth);
 
-        printf("Rectangle %d: Area = %d, Perimeter = %d\n", i + 1, area, perimeter);
+        printf("Rectangle %d: Area = %.2f, Perimeter = %.2\n", i + 1, area, perimeter);
     }
 
     return 0;
