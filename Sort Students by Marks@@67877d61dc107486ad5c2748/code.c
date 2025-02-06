@@ -18,7 +18,7 @@ int main() {
     {
         for(int c=0;c<n-1-r;c++)
         {
-            if(students[c].marks > students[c+1].marks)
+            if(students[c].marks < students[c+1].marks)
             {
                 struct STUDENT temp = students[c];
                 students[c] = students[c+1];
