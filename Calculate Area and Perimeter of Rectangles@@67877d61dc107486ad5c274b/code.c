@@ -18,6 +18,6 @@ int main() {
         int area = rectangle[i].length * rectangle[i].breadth;
         int perimeter = 2 * (rectangle[i].length + rectangle[i].breadth);
 
-        printf("Rectangle %d: Area = %d, Perimeter = %d\n", i, area, perimeter);
+        printf("Rectangle %d: Area = %d, Perimeter = %d\n", i+1, area, perimeter);
     }
 }
