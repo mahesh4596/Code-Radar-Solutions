@@ -1,27 +1,26 @@
 #include <stdio.h>
 
-struct STUDENT
-{
-    int rollno;
-    char name[100];
-    float marks;
-};
-
 int main() {
     int n;
-    scanf("%d",&n);
-    struct STUDENT students[n];
-    for(int i=1;i<=n;i++)
-    {
-        scanf("%d %s %f",&students[i].rollno,&students[i].name,&students[i].marks);
-    }
-    float minimum = students[1].marks;
-    for(int i=1;i<=n;i++)
-    {
-        if(students[i].marks < minimum)
-        {
-            printf("Student with Minimum Marks: Roll Number: %d, Name: %s, Marks: %.2f",students[i].rollno,students[i].name,students[i].marks);
-        }
+    scanf("%d", &n);
+
+    int rollno[n];
+    char name[n][100];
+    float marks[n];
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d %s %f", &rollno[i], name[i], &marks[i]);
     }
 
+    float minMarks = marks[0];
+    int minIndex = 0;
+
+    for (int i = 1; i < n; i++) { 
+        if (marks[i] < minMarks) {
+            minMarks = marks[i];
+            minIndex = i;
+        }
+    }
+    printf("\nStudent with Minimum Marks: Roll Number: %d, Name: %s, Marks: %.2f\n",rollno[minIndex],name[minIndex],marks[minIndex]);
+    return 0;
 }
