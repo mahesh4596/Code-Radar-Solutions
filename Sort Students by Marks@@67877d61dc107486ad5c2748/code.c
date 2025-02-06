@@ -8,7 +8,6 @@ struct STUDENT {
 
 int main() {
     int n;
-    float temp;
     scanf("%d", &n);
 
     struct STUDENT students[n];
@@ -21,8 +20,8 @@ int main() {
         {
             if(students[c].marks>students[c+1].marks)
             {
-                temp=students[c].marks;
-                students[c].marks=students[c+1].marks;
+                struct STUDENT temp=students[c];
+                students[c]=students[c+1];
                 students[c+1]=temp;
             }
         }
