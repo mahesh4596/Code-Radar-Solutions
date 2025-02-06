@@ -22,6 +22,6 @@ int main() {
         if(students[i].marks>threshold)
             count++;
     }
-    printf("Count of Students scoring above %f: %d",threshold,count);
+    printf("Count of students scoring above %.2f: %d",threshold,count);
     
 }
