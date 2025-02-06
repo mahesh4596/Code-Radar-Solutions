@@ -29,7 +29,7 @@ int main() {
     for(int i=0;i<=n;i++)
     {
         printf("Roll Number: %d, Name: %s, Marks: %.2f",students[i].rollno,students[i].name,students[i].marks);
-        printf("/n");
+        printf("\n");
     }
 
 }
