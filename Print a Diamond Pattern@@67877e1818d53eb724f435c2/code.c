@@ -18,7 +18,7 @@ int main() {
         for (m=1; m<=i; m++) {
             printf(" ");
         }
-        printf("\n";)
+        printf("\n");
     }
     return 0;
 }
