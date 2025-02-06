@@ -5,9 +5,8 @@ struct Student
     char name[100];
     float marks;
 };
-
 int main() {
-    int n,rno;
+    int n,rno,found=0;
     scanf("%d",&n);
     struct Student students[n];
     for(int i=1;i<=n;i++)
@@ -20,7 +19,13 @@ int main() {
         if(students[i].rollno==rno)
         {
             printf("Roll Number: %d, Name: %s, Marks: %.2f",students[i].rollno,students[i].name,students[i].marks);
+            found=1;
+            break;
         }
     }
+    if(!found)
+        printf("Student Not found");
+    
+    return 0;
 
 }
