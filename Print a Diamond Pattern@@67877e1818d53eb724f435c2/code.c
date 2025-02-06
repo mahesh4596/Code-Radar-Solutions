@@ -1,36 +1,24 @@
 #include <stdio.h>
 
 int main() {
-    int n, i, j, space;
+    int n;
     scanf("%d", &n);
 
-    int mid = n / 2;
-
-    for (i = 0; i <= mid; i++) 
-    {
-        for (space = 0; space < mid - i; space++) 
-        {
+    int i,j,k,l,m;
+    for (i=1; i<=n; i++) {
+        for (j=n-i+1; j>=1;j--) {
             printf(" ");
         }
-        for (j = 0; j < 2 * i + 1; j++) 
-        {
+        for (k=1;k<=i;k++) {
             printf("*");
         }
-        printf("\n");
-    }
-
-    for (i = mid - 1; i >= 0; i--) 
-    {
-        for (space = 0; space < mid - i; space++) 
-        {
+        for (l=2; l<=i;l++) {
+            printf("*");
+        }
+        for (m=1; m<=i; m++) {
             printf(" ");
         }
-        for (j = 0; j < 2 * i + 1; j++) 
-        {
-            printf("*");
-        }
-        printf("\n");
+        printf("\n";)
     }
-
     return 0;
 }
