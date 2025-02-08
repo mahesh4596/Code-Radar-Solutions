@@ -6,7 +6,7 @@ int isPrime(int N)
         return 0;
     if(N==2)
         return 1;
-    for(int i=2;i<n;i++)
+    for(int i=2;i*i<=n;i++)
     {
         if(N%i==0)
             return 0;
