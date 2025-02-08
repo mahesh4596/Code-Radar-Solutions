@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int isPrime(int N) {
+int isPrime(int N) 
+{
     if (N <= 1) 
         return 0;
     if (N == 2) 
@@ -16,7 +17,8 @@ int isPrime(int N) {
 int main() {
     int t;
     scanf("%d", &t);
-    while (t--) {
+    while (t--) 
+    {
         int num;
         scanf("%d", &num);
         printf("%d\n", isPrime(num));
