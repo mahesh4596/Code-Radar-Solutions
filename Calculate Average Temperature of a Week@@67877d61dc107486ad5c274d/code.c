@@ -9,7 +9,7 @@ struct Day
 int main() 
 {
     int n;
-    float sum = 0;
+    float sum = 0.0;
     scanf("%d", &n);
 
     struct Day d[n];
