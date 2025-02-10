@@ -16,9 +16,13 @@ int main() {
     {
         scanf("%d %s %f",&students[i].rno,&students[i].name,&students[i].marks);
     }
+
+    int count=0
     for(int i=0;i<n;i++)
     {
-        if(students[i].marks>students[i+1].marks)
-            printf("Roll Number: %d, Name: %s, Marks: %.2f\n",students[i].rno,students[i].name,students[i].marks);
+        if(students[i].marks>students[count].marks)
+            count=i;
     }
+    printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f\n",students[count].rno,students[count].name,students[count].marks);
+
 }
