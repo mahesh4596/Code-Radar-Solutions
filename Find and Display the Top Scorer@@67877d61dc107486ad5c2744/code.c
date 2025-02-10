@@ -18,7 +18,7 @@ int main() {
     }
 
     int count=0
-    for(int i=0;i<n;i++)
+    for(int i=1;i<n;i++)
     {
         if(students[i].marks>students[count].marks)
             count=i;
