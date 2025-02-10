@@ -9,8 +9,8 @@ struct Day
 int main() 
 {
     int n;
-    float sum = 0.0;
-    scanf("%d", &n);
+    float sum = 0;
+    // scanf("%d", &n);
 
     struct Day d[n];
 
@@ -20,7 +20,7 @@ int main()
         sum += d[i].temp;
     }
 
-    float avg = sum / (float)n;
+    float avg = sum / n;
     printf("Average Temperature: %.2f\n", avg);
 
     return 0;
