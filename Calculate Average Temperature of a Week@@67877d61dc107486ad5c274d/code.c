@@ -8,10 +8,8 @@ struct Day
 
 int main() 
 {
-    int n;
+    int n = 7;
     float sum = 0;
-    // scanf("%d", &n);
-
     struct Day d[n];
 
     for(int i = 0; i < n; i++) 
