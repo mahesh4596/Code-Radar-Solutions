@@ -2,7 +2,7 @@
 
 struct Day 
 {
-    int temp;
+    float temp;
     char day[100];
 };
 
@@ -16,7 +16,7 @@ int main()
 
     for(int i = 0; i < n; i++) 
     {
-        scanf("%d %s %f",&d[i].day,&d[i].temp);
+        scanf("%s %f",&d[i].day,&d[i].temp);
         sum += d[i].temp;
     }
 
