@@ -19,7 +19,7 @@ int main()
 
     float p;
     scanf("%f", &p);
-printf("Books above price %.2f:\n",p);
+    printf("Books above price %.2f:\n",p);
     int found = 0;
     for (int i = 0; i < n; i++) 
     { 
