@@ -23,6 +23,7 @@ int main() {
     { 
         if (books[i].price > p) 
         {  
+            printf("Books above price %.2f\n",p);
             printf("Title: %s, Author: %s, Price: %d\n", books[i].title, books[i].author, books[i].price);
             found = 1;
         }
