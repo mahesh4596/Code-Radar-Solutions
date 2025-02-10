@@ -35,8 +35,8 @@ int main() {
         }
     }
 
-    if (arr[count-bit-1]==1)
-    arr[count-bit+1] = 0;
+    if (arr[count-bit]==1)
+    arr[count-bit] = 0;
 // 18-> 10010 <- 01111
     int temp3 = count;
     for (int k=0; k<=count; k++) {
