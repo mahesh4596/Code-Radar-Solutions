@@ -2,9 +2,9 @@
 
 int main()
 {
-    char str1[100],str2[100];
-    fgets(str1, sizeof(str), stdin);
-    fgets(str2, sizeof(str), stdin);
+    char s1[100],s2[100];
+    fgets(s1, sizeof(s), stdin);
+    fgets(s2, sizeof(s), stdin);
     int as1[256]={0},as2[256]={0};
     for(int i=0;i<s1.length();i++)
     {
