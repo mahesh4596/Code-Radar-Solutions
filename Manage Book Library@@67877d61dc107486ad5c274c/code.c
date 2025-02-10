@@ -19,13 +19,13 @@ int main()
 
     float p;
     scanf("%f", &p);
-
+printf("Books above price %.2f:\n",p);
     int found = 0;
     for (int i = 0; i < n; i++) 
     { 
         if (books[i].price > p) 
         {  
-            printf("Books above price %.2f:\n",p);
+            
             printf("Title: %s, Author: %s, Price: %.2f\n", books[i].title, books[i].author, books[i].price);
             found = 1;
         }
