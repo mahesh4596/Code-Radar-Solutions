@@ -1,27 +1,36 @@
 #include <stdio.h>
 
-struct Book
-{
+struct Book {
     int price;
-    char author[100],title[100];
+    char title[100], author[100];
 };
 
 int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
 
     struct Book books[n];
-    for(int i=0;i<n;i++)
+    for (int i = 0; i < n; i++) 
     {
-        scanf("%s %s %d",&books[i].title,&books[i].author,&books[i].price);
+        scanf("%s %s %d", books[i].title, books[i].author, &books[i].price);
     }
+
     int p;
-    scanf("%d",&p);
+    scanf("%d", &p);
 
-    for(int i=0;i<n;i++)
+    int found = 0;
+    for (int i = 0; i < n; i++) 
+    { 
+        if (books[i].price > p) 
+        {  
+            printf("Title: %s, Author: %s, Price: %d\n", books[i].title, books[i].author, books[i].price);
+            found = 1;
+        }
+    }
+    if (!found) 
     {
-        if(books[i].price>p)
-            printf("Books above price %.2f: Title: %s, Author: %s, Price: %.2f\n",p,books[i].title,books[i].author,books[i].price);       
+        printf("No books above price %d\n", p);
     }
 
+    return 0;
 }
