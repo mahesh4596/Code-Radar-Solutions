@@ -10,7 +10,7 @@ int power(int a,int b) {
 
 int main() {
     int n, bit;
-    int arr[100];
+    int arr[20];
     int final_num=0;
     scanf("%d %d", &n, &bit);
     int count = 0, temp;
