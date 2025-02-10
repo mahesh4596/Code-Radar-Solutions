@@ -20,7 +20,7 @@ int main()
         sum += d[i].temp;
     }
 
-    float avg = sum / n;
+    float avg = sum / (float)n;
     printf("Average Temperature: %.2f\n", avg);
 
     return 0;
