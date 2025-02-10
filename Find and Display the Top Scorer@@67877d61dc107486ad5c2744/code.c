@@ -17,7 +17,7 @@ int main() {
         scanf("%d %s %f",&students[i].rno,&students[i].name,&students[i].marks);
     }
 
-    int count=0
+    int count=0;
     for(int i=1;i<n;i++)
     {
         if(students[i].marks>students[count].marks)
