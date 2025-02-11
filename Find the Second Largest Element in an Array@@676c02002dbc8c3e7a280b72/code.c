@@ -3,8 +3,8 @@
 
 int getMax(int ary[],int size)
 {
-    if(size<2)
-        return -1;
+    if(size < 2)
+        return 1;
     int m1=ary[0], m2=INT_MIN;
 
     for(int i=0;i<size;i++)
