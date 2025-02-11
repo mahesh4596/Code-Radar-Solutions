@@ -18,8 +18,8 @@ int main()
             }
         }
     }
-    if(jasoos==1)
-        printf("Not Sorted");
-    else
+    if(jasoos)
         printf("Sorted");
+    else
+        printf("Not Sorted");
 }
