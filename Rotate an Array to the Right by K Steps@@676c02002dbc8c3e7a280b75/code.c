@@ -13,7 +13,7 @@ int getRotate(int ary[],int size,int k)
         ary[i] = ary2[i];
     }
 }
-void show(int &ary[],int size)
+void show(int ary[],int size)
 {
     for(int i=0;i<size;i++)
     {
