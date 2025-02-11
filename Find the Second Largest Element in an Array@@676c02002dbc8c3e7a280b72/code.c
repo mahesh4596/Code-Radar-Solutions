@@ -1,4 +1,4 @@
-#include <iostream>
+#include <stdio.h>
 #include<vector>
 #include<algorithm>
 #include <climits>
@@ -35,8 +35,14 @@ class BCE
 
 int main()
 {
-    vector<int> ary{2, 4, 5, 6, 8};
+    int n;
+    scanf("%d",&n);
+    int ary[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&ary[i]);
+    }
     BCE obj;
     int max=obj.getMax(ary);
-    cout<<max<<endl;
+    printf("%d",max);
 }
