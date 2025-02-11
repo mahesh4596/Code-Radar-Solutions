@@ -4,7 +4,7 @@
 int getMax(int ary[],int size)
 {
     if(size < 2)
-        return 1;
+        return -1;
     int m1=ary[0], m2=INT_MIN;
 
     for(int i=0;i<size;i++)
@@ -21,7 +21,7 @@ int getMax(int ary[],int size)
     }
     if(m2 == INT_MIN)
     {
-        return (1);
+        return (-1);
     }
     else
     {
