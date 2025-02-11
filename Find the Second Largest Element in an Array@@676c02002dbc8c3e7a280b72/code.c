@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 
 class BCE
 {
@@ -18,7 +19,7 @@ class BCE
             }
             else if(m1>ary[i] && m2<ary[i])
             {
-                m2=ary[i];
+                m2 = ary[i];
             }
         }
         if(m2 == INT_MIN)
