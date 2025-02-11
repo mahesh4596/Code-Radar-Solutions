@@ -21,7 +21,7 @@ class BCE
                 m2=ary[i];
             }
         }
-        if(m1==ary[0]&&m2==INT_MIN)
+        if(m2 == INT_MIN)
         {
             return (1);
         }
