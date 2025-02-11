@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include <limits.h>
 
-int getRotate(int &ary[],int size,int k)
+int getRotate(int ary[],int size,int k)
 {
     int ary2[size];
     for(int i=0;i<size;i++)
     {
-        int id = (i+k)%size;
+        int id = (i+k) % size;
         ary2[id]=ary[i];
     }
     for(int i=0;i<size;i++)
