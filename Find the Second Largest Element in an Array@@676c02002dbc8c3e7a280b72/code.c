@@ -1,37 +1,33 @@
 #include <stdio.h>
 #include <limits.h>
 
-class BCE
+int getMax(int ary[],int size)
 {
-    public:
-    int getMax(int ary[],int size)
-    {
-        if(size<2)
-            return -1;
-        int m1=ary[0], m2=INT_MIN;
+    if(size<2)
+        return -1;
+    int m1=ary[0], m2=INT_MIN;
 
-        for(int i=0;i<size;i++)
+    for(int i=0;i<size;i++)
+    {
+        if(m1<ary[i])
         {
-            if(m1<ary[i])
-            {
-                m2=m1;
-                m1=ary[i];
-            }
-            else if(m1>ary[i] && m2<ary[i])
-            {
-                m2 = ary[i];
-            }
+            m2=m1;
+            m1=ary[i];
         }
-        if(m2 == INT_MIN)
+        else if(m1>ary[i] && m2<ary[i])
         {
-            return (1);
-        }
-        else
-        {
-            return(m2);
+            m2 = ary[i];
         }
     }
-};
+    if(m2 == INT_MIN)
+    {
+        return (1);
+    }
+    else
+    {
+        return(m2);
+    }
+}
 
 int main()
 {
@@ -42,7 +38,7 @@ int main()
     {
         scanf("%d",&ary[i]);
     }
-    BCE obj;
-    int max=obj.getMax(ary,n);
+
+    int max = getMax(ary,n);
     printf("%d",max);
 }
