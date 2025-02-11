@@ -1,20 +1,38 @@
 #include <stdio.h>
-#include <vector>
-#include <algorithm>
 
-class Rotate
+int getRotate(int ary[],int size,int k)
 {
-    void rotate(vector<int> &ary, int k)
+    int ary2[size];
+    for(int i=0;i<size;i++)
     {
-        int n=ary.size();
-        vector<int> ary2(ary.size());
-        for(int i=0;i<n;i++)
-        {
-            int id=(i+k) % n;
-            ary2[id]=ary[i];
-        }
-        ary=ary2;
+        int id = (i+k) % size;
+        ary2[id]=ary[i];
     }
-    void show(vector<int> &ary)
-    
+    for(int i=0;i<size;i++)
+    {
+        ary[i] = ary2[i];
+    }
+}
+void show(int ary[],int size)
+{
+    for(int i=0;i<size;i++)
+    {
+        printf("%d ",ary[i]);
+    }
+}
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int ary[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&ary[i]);
+    }
+    int k;
+    scanf("%d",&k);
+
+    getRotate(ary,n,k);
+    show(ary,n);
 }
