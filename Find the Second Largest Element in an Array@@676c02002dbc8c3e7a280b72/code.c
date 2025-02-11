@@ -1,13 +1,9 @@
 #include <stdio.h>
-#include<vector>
-#include<algorithm>
-#include <climits>
-using namespace std;
 
 class BCE
 {
     public:
-    int getMax(vector<int> ary)
+    int getMax(int ary[])
     {
         int m1=ary[0], m2=INT_MIN;
         for(int i=0;i<ary.size();i++)
