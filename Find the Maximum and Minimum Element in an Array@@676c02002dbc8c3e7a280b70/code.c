@@ -19,5 +19,5 @@ int main()
         if(Min>SAL[i])
             Min=SAL[i];
     }
-    printf("%d %d",Max,Min);
+    printf("%d %d",Min,Max);
 }
