@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main()
-{   int N,r,c,temp,i;
+{   int N,r,c,jasoos,i;
     scanf("%d",&N);
     int A[N];
     for(i=0;i<N;i++)
@@ -13,9 +13,13 @@ int main()
         {
             if(A[c]>A[c+1])
             {
-                printf("Not Sorted");
+                jasoos=0;
+                break;                
             }
         }
     }
-    printf("Sorted");
+    if(jasoos==1)
+        printf("Sorted");
+    else
+        printf("Not Sorted");
 }
