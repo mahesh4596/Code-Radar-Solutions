@@ -18,7 +18,7 @@ int main()
             }
         }
     }
-    if(jasoos = 1)
+    if(jasoos == 1)
         printf("Sorted");
     else
         printf("Not Sorted");
