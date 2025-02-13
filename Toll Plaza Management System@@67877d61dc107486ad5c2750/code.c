@@ -15,7 +15,7 @@ int main()
     {
         scanf("%s %s %f",&vehicle[i].vno,&vehicle[i].name,&vehicle[i].tamount);
     }
-    float tcar,ttruck,tcar;
+    float tcar = 0,ttruck = 0,tcar = 0;
     for(int i=0;i<n;i++)
     {
         if(vehicle[i].name == "Car")
