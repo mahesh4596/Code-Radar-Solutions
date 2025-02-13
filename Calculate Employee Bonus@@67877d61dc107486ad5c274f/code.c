@@ -18,7 +18,7 @@ int main()
     }
     for(int i = 0; i < n; i++)
     {
-        int bonus;
+        float bonus;
         if(emp[i].salary < 50000)
             bonus = (emp[i].salary * 10) / 100;
         else
