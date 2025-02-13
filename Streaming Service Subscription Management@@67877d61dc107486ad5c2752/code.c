@@ -14,7 +14,7 @@ int main()
     struct Subscription service[n];
     for(int i=0;i<n;i++)
         scanf("%s %s %f",&service[i].uname,&service[i].stype,&service[i].scost);
-    int cb = 0,cs = 0,cp = 0,tbasic = 0,tpremium = 0,tstandard = 0;
+    float cb = 0,cs = 0,cp = 0,tbasic = 0,tpremium = 0,tstandard = 0;
     for(int i=0;i<n;i++)
     {
         if(strcmp(service[i].stype,"Basic") == 0)
