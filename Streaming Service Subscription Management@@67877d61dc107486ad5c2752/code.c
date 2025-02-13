@@ -33,5 +33,5 @@ int main()
             cp ++;
         }
     }
-    printf("Basic: %.0f, Revenue: %.2f; Standard: %.0f, Revenue: %.2f; Premium: %.0f, Revenue: %.2f",cb,tbasic,cs,tstandard,cp,tpremium);
+    printf("Basic: %.0f Users, Revenue: %.2f; Standard: %.0f Users, Revenue: %.2f; Premium: %.0f Users, Revenue: %.2f",cb,tbasic,cs,tstandard,cp,tpremium);
 }
