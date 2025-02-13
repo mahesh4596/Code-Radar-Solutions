@@ -22,6 +22,6 @@ int main()
             bonus = (emp[i].salary * 10) / 100;
         else
             bonus = (emp[i].salary * 5) / 100;
-        printf("Employee ID: %d, Name: %s, Bonus: %d\n", emp[i].id, emp[i].name, bonus);
+        printf("Employee ID: %d, Name: %s, Bonus: %.2f\n", emp[i].id, emp[i].name, bonus);
     }
 }
