@@ -2,7 +2,8 @@
 
 struct Employee
 {
-    int id, salary;
+    int id;
+    float salary;
     char name[100];
 };
 
@@ -13,7 +14,7 @@ int main()
     struct Employee emp[n];
     for(int i = 0; i < n; i++)
     {
-        scanf("%d %s %d", &emp[i].id, emp[i].name, &emp[i].salary);
+        scanf("%d %s %f", &emp[i].id, emp[i].name, &emp[i].salary);
     }
     for(int i = 0; i < n; i++)
     {
