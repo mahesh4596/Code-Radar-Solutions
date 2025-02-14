@@ -12,7 +12,7 @@ int countSubstringOccurrences(char str[])
     return count;
 }
 int main() {
-    char str[1000];
+    char str[100];
     int occurrences = countSubstringOccurrences(str);
     printf("%s: %d\n", sub, occurrences);
 }
