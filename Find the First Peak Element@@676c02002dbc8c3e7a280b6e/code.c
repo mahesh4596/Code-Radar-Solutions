@@ -16,5 +16,5 @@ int main()
         else
             beg = mid + 1;
     }
-    printf("%d",beg);
+    printf("%d",ary[beg]);
 }
