@@ -23,3 +23,9 @@ void selectionSort(int ary[], int size) {
         swap(&ary[j], &ary[loc]);
     }
 }
+
+void printArray(int ary[],int n)
+{
+    for(int i=0;i<n;i++)
+        printf("%d ",ary[i]);
+}
