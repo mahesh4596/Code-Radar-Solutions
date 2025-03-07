@@ -6,4 +6,5 @@ int binarySearch(int ary[],int n,int target)
         if(ary[i]==target)
             return i;
     }
+    return -1;
 }
