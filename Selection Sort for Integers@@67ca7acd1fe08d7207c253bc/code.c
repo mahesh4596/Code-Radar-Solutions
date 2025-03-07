@@ -30,7 +30,7 @@ int main() {
     int ary[n];
     for(int i=0;i<n;i++)
     {
-        scanf("%d",&ary[i]);
+        scanf("%d ",&ary[i]);
     }
     int size = sizeof(ary) / sizeof(ary[0]);
 
