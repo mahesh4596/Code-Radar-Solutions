@@ -17,7 +17,7 @@ int getMinLoc(int ary[], int beg, int size) {
     return loc;
 }
 
-void doSelectionSort(int ary[], int size) {
+void selectionSort(int ary[], int size) {
     for (int j = 0; j < size - 1; j++) {
         int loc = getMinLoc(ary, j, size);
         swap(&ary[j], &ary[loc]);
