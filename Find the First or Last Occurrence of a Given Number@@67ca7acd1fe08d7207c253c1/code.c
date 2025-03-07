@@ -9,7 +9,7 @@ int findOccurrence(int ary[],int n,int target,char mode)
                 return i;
         }
     }
-    if(mode=='F')
+    else if(mode=='F')
     {
         for(i=n-1;i>=0;i++)
         {
