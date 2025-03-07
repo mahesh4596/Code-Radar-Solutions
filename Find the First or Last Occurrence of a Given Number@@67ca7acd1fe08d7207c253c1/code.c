@@ -11,7 +11,7 @@ int findOccurrence(int ary[],int n,int target,char mode)
     }
     else if(mode=='L')
     {
-        for(i=n-1;i>=0;i++)
+        for(i=n-1;i>=0;i--)
         {
             if(ary[i]==target)
                 return i;
