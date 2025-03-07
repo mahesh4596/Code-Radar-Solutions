@@ -1,31 +1,30 @@
 #include <stdio.h>
 
-void swap(int *a, int *b) {
-    int temp = *a;
+void swap(char *a, char *b) {
+    char temp = *a;
     *a = *b;
     *b = temp;
 }
 
-int getMinLoc(int ary[], int beg, int size) {
-    int min = ary[beg], loc = beg;
-    for (int i = beg; i < size; i++) {
-        if (min > ary[i]) {
-            min = ary[i];
+int getMinLoc(char ary[], int beg, int size) {
+    int loc = beg;
+    for (int i = beg + 1; i < size; i++) {
+        if (ary[i] < ary[loc]) {
             loc = i;
         }
     }
     return loc;
 }
 
-void selectionSort(int ary[], int size) {
+void selectionSort(char ary[], int size) {
     for (int j = 0; j < size - 1; j++) {
         int loc = getMinLoc(ary, j, size);
         swap(&ary[j], &ary[loc]);
     }
 }
 
-void printArray(int ary[],int n)
-{
-    for(int i=0;i<n;i++)
-        printf("%d ",ary[i]);
+void printArray(char ary[], int n) {
+    for (int i = 0; i < n; i++)
+        printf("%c ", ary[i]);
 }
+
