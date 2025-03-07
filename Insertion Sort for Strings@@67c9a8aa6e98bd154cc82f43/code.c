@@ -22,7 +22,7 @@ int getMinLoc(char ary[][100], int beg, int size)
     return loc;
 }
 
-void selectionSort(char ary[][100], int size) 
+void insertionSort(char ary[][100], int size) 
 {
     for (int j = 0; j < size - 1; j++) 
     {
