@@ -23,22 +23,3 @@ void doSelectionSort(int ary[], int size) {
         swap(&ary[j], &ary[loc]);
     }
 }
-
-int main() {
-    int n;
-    scanf("%d",&n);
-    int ary[n];
-    for(int i=0;i<n;i++)
-    {
-        scanf("%d ",&ary[i]);
-    }
-    int size = sizeof(ary) / sizeof(ary[0]);
-
-    doSelectionSort(ary, size);
-
-    for (int i = 0; i < size; i++) {
-        printf("%d ", ary[i]);
-    }
-
-    return 0;
-}
