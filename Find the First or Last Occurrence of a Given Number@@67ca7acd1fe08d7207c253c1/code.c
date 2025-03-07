@@ -1,4 +1,4 @@
-int findOccurance(int ary[],int n,int target,char mode)
+int findOccurrence(int ary[],int n,int target,char mode)
 {
     int i;
     if(mode=='F')
