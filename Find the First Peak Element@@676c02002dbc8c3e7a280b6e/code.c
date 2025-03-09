@@ -10,7 +10,9 @@ int findPeak(int ary[], int n) {
             end = mid;  
         else if (ary[mid] < ary[mid + 1]) 
             beg = mid + 1;
-        else 
+        else if(ary[mid] == ary[mid+1] && ary[mid]==ary[mid-1])
+            return -1;
+        else
         { 
             if (ary[beg] == ary[mid] && ary[end] == ary[mid]) 
             {
