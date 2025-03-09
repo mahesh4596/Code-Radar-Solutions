@@ -8,8 +8,10 @@ void getFrequence(int ary[],int n)
         if(i<n-1 && ary[i]==ary[i+1])
             c++;
         else
+        {
             printf("%d %d\n",ary[i],c);
             c=1;
+        }
     }
 }
 
