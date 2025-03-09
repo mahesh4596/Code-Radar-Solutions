@@ -24,5 +24,17 @@ int main()
     {
         scanf("%d",&ary[i]);
     }
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n-1-i;j++)
+        {
+            if(ary[c+1]<ary[c])
+            {
+                int temp=ary[c];
+                ary[c] = ary[c+1];
+                ary[c+1]=temp;
+            }
+        }
+    }
     getFrequence(ary,n);
 }
