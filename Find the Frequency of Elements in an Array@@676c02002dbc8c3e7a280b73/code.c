@@ -28,11 +28,11 @@ int main()
     {
         for(int j=0;j<n-1-i;j++)
         {
-            if(ary[c+1]<ary[c])
+            if(ary[j+1]<ary[j])
             {
-                int temp=ary[c];
-                ary[c] = ary[c+1];
-                ary[c+1]=temp;
+                int temp=ary[j];
+                ary[j] = ary[j+1];
+                ary[j+1]=temp;
             }
         }
     }
