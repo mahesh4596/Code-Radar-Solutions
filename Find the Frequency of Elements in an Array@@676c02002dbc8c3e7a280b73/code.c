@@ -5,7 +5,7 @@ void getFrequence(int ary[],int n)
     int c=1;
     for(int i=0;i<n;i++)
     {
-        if(i<n-1 && ary[i]==ary[i+1])
+        if(ary[i]==ary[i+1])
             c++;
         else
         {
