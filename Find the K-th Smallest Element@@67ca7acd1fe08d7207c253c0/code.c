@@ -7,7 +7,7 @@ void swap(int *a, int *b) {
     *b = temp;
 }
 
-int findKthSmallest(int ary[], int n, int k) {
+int KthSmallest(int ary[], int n, int k) {
     for (int i = 0; i < k; i++) 
     { 
         int minIndex = i;
