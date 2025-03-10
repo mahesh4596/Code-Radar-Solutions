@@ -14,7 +14,7 @@ int isPrime(int num)
 
 void printPrimesInRange(int start, int end) 
 {
-    int c=0
+    int c=0;
     for (int i = start; i <= end; i++) 
     {
         if (isPrime(i))
