@@ -1,11 +1,24 @@
-int kthSmallest(int ary[],int n,int k)
-{
-    int nums[100];
-    for(int i=0;i<n;i++)
-    {
-        int id=(i+k)%n;
-        nums[id]=ary[i];
+
+#include <stdio.h>
+
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int findKthSmallest(int ary[], int n, int k) {
+    for (int i = 0; i < k; i++) 
+    { 
+        int minIndex = i;
+        for (int j = i + 1; j < n; j++) 
+        {
+            if (ary[j] < ary[minIndex]) 
+            {
+                minIndex = j;
+            }
+        }
+        swap(&ary[i], &ary[minIndex]);
     }
-    ary=nums;
-    return ary;
+    return ary[k - 1]; 
 }
