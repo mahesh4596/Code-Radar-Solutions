@@ -2,22 +2,21 @@
 
 int main()
 {
-    int n, count = 0;
+    int n, count = 1; 
     scanf("%d", &n);
     
     if (!n) 
-    {
+    { 
         printf("-1\n");
         return 0;
     }
     
-    while (n) 
-    {
-        ++count;
-        if (n & 1)
-            break;
+    while (!(n & 1)) 
+    {  
         n = n >> 1;
+        count++;
     }
-    
+
     printf("%d\n", count);
+    return 0;
 }
