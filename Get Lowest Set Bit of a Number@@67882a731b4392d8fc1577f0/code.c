@@ -6,7 +6,7 @@ int main()
     scanf("%d",&n);
     if(!n)
         printf("-1");
-        return;
+        return 0;
     while(n)
     {
         ++count;
