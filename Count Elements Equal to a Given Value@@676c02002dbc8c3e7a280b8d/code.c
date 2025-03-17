@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void getFrequence(int ary[], int n) 
+void getFrequence(int ary[], int n,int a) 
 {
     int counted[n]; 
     for (int i = 0; i < n; i++) 
@@ -24,24 +24,24 @@ void getFrequence(int ary[], int n)
                 counted[j] = 1; 
             }
         }
-        if (count == maxFreq) 
+        if (ary[i] == a) 
         {
-            maxFreq = count;
-            maxElement = ary[i];
+            printf("%d",count);
+            return;
         }
     }
     printf("%d", maxElement);
 }
 
 int main() {
-    int n;
-    scanf("%d", &n);
+    int n,a;
+    scanf("%d %d", &n,&a);
 
     int ary[n];
     for (int i = 0; i < n; i++) {
         scanf("%d", &ary[i]);
     }
 
-    getFrequence(ary, n);
+    getFrequence(ary, n, a);
     return 0;
 }
