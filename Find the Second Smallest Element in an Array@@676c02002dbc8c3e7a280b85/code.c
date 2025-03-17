@@ -11,7 +11,7 @@ int main()
     {
         for(int c=0;c<N-1-r;c++)
         {
-            if(A[c]>A[c+1])
+            if(ary[c]>ary[c+1])
             {
                 int temp = ary[c];
                 ary[c] = ary[c+1];
