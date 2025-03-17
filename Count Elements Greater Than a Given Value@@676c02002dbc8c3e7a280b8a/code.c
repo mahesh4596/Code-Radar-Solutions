@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void getFrequence(int ary[], int n) 
+void getFrequence(int ary[], int n,int a) 
 {
     int counted[n]; 
     for (int i = 0; i < n; i++) 
