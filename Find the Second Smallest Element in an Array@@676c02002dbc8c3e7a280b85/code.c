@@ -6,7 +6,8 @@ int main()
     int N;
     scanf("%d", &N);
     
-    if (N < 2) {
+    if (N < 2) 
+    {
         printf("-1");
         return 0;
     }
@@ -17,27 +18,28 @@ int main()
         scanf("%d", &ary[i]);
     }
 
-    int firstMax = INT_MAX, secondMax = INT_MAX;
+    int firstMin = INT_MAX, secondMin = INT_MAX;
     
     for (int i = 0; i < N; i++) 
     {
-        if (ary[i] > firstMax) 
+        if (ary[i] < firstMin) 
         {
-            secondMax = firstMax;
-            firstMax = ary[i];
+            secondMin = firstMin;
+            firstMin = ary[i];
         } 
-        else if (ary[i] > secondMax && ary[i] != firstMax) 
+        else if (ary[i] < secondMin && ary[i] != firstMin) 
         {
-            secondMax = ary[i];
+            secondMin = ary[i];
         }
     }
 
-    if (secondMax == INT_MIN) 
+    if (secondMin == INT_MAX) 
     {
         printf("-1");
-    } else 
+    } 
+    else 
     {
-        printf("%d\n", secondMax);
+        printf("%d\n", secondMin);
     }
 
     return 0;
