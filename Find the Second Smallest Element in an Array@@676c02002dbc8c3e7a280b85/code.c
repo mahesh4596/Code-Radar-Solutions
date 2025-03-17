@@ -1,23 +1,44 @@
 #include <stdio.h>
-int main()
-{   int N;
-    scanf("%d",&N);
-    int ary[N];
-    for(int i=0;i<N;i++)
-    {
-        scanf("%d",&ary[i]);
+#include <limits.h>
+
+int main() 
+{
+    int N;
+    scanf("%d", &N);
+    
+    if (N < 2) {
+        printf("-1");
+        return 0;
     }
-    for(int r=0;r<N;r++)
+
+    int ary[N];
+    for (int i = 0; i < N; i++) 
     {
-        for(int c=0;c<N-1-r;c++)
+        scanf("%d", &ary[i]);
+    }
+
+    int firstMax = INT_MIN, secondMax = INT_MIN;
+    
+    for (int i = 0; i < N; i++) 
+    {
+        if (ary[i] > firstMax) 
         {
-            if(ary[c]>ary[c+1])
-            {
-                int temp = ary[c];
-                ary[c] = ary[c+1];
-                ary[c+1] = temp;
-            }
+            secondMax = firstMax;
+            firstMax = ary[i];
+        } 
+        else if (ary[i] > secondMax && ary[i] != firstMax) 
+        {
+            secondMax = ary[i];
         }
     }
-    printf("%d",ary[N-2]);
+
+    if (secondMax == INT_MIN) 
+    {
+        printf("-1");
+    } else 
+    {
+        printf("%d\n", secondMax);
+    }
+
+    return 0;
 }
