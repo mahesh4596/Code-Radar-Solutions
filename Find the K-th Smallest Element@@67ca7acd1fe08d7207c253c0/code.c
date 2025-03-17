@@ -1,13 +1,14 @@
-
-#include <stdio.h>
-
-void swap(int *a, int *b) {
+void swap(int *a, int *b) 
+{
     int temp = *a;
     *a = *b;
     *b = temp;
 }
 
-int kthSmallest(int ary[], int n, int k) {
+int kthSmallest(int ary[], int n, int k) 
+{
+    if (n == 0 || k <= 0 || k > n)  
+        return -1;
     for (int i = 0; i < k; i++) 
     { 
         int minIndex = i;
@@ -16,7 +17,7 @@ int kthSmallest(int ary[], int n, int k) {
             if (ary[j] < ary[minIndex]) 
             {
                 minIndex = j;
-            }
+            }   
         }
         swap(&ary[i], &ary[minIndex]);
     }
