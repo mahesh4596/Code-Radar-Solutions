@@ -29,13 +29,8 @@ void getFrequence(int ary[], int n,int a)
             printf("%d",count);
             return;
         }
-        // else
-        // {
-        //     printf("0");
-        //     return;
-        // }
     }
-    printf("%d", maxElement);
+    printf("0");
 }
 
 int main() {
