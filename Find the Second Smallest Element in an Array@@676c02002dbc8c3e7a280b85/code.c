@@ -17,7 +17,7 @@ int main()
         scanf("%d", &ary[i]);
     }
 
-    int firstMax = INT_MIN, secondMax = INT_MIN;
+    int firstMax = INT_MAX, secondMax = INT_MAX;
     
     for (int i = 0; i < N; i++) 
     {
