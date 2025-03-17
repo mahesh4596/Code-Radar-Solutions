@@ -30,6 +30,6 @@ int main()
     else 
         median = (ary[n / 2 - 1] + ary[n / 2]) / 2.0;
 
-    printf("%.1f\n", median);
+    printf("%.0f\n", median);
     return 0;
 }
