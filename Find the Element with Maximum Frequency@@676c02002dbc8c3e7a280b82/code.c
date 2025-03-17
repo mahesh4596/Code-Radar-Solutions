@@ -35,11 +35,9 @@ void getFrequence(int ary[], int n)
 
 int main() {
     int n;
-    printf("Enter the number of elements: ");
     scanf("%d", &n);
 
     int ary[n];
-    printf("Enter the elements:\n");
     for (int i = 0; i < n; i++) {
         scanf("%d", &ary[i]);
     }
