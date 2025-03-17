@@ -1,15 +1,15 @@
 #include <stdio.h>
 int main()
-{   int N,r,c,jasoos = 1,i;
+{   int N;
     scanf("%d",&N);
-    int A[N];
-    for(i=0;i<N;i++)
+    int ary[N];
+    for(int i=0;i<N;i++)
     {
-        scanf("%d",&A[i]);
+        scanf("%d",&ary[i]);
     }
-    for(r=0;r<N;r++)
+    for(int r=0;r<N;r++)
     {
-        for(c=0;c<N-1-r;c++)
+        for(int c=0;c<N-1-r;c++)
         {
             if(A[c]>A[c+1])
             {
@@ -19,5 +19,5 @@ int main()
             }
         }
     }
-    printf("%d",ary[n-2]);
+    printf("%d",ary[N-2]);
 }
