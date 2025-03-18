@@ -2,6 +2,7 @@
 
 int digitSum(int num)
 {
+    n=(n<0)?n*(-1):n;
     int sum=0,r;
     while(num!=0)
     {
