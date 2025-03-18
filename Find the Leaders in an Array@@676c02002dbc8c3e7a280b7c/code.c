@@ -10,7 +10,7 @@ int main() {
     }
     for(int i=0;i<n;i++)
     {
-        if((ary[i]>=ary[i+1] && ary[i]>=ary[i-1]) || ary[i] == ary[n - 1])
+        if(ary[i]>=ary[i+1] && ary[i]>=ary[i-1] && ary[i] == ary[n - 1])
             printf("%d ",ary[i]);
     }
 }
