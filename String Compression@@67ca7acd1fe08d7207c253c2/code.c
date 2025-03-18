@@ -14,6 +14,12 @@ char compressString(char str[],int compressed[])
             index += printf(&compressed[index], "%d", count);
             count = 1;
         }  
-
     }
+    compressed[index] = '\0';  
+    if (index >= n) {
+        printf("%s\n", str);
+    } else {
+        printf("%s\n", compressed);
+    }
+
 }
