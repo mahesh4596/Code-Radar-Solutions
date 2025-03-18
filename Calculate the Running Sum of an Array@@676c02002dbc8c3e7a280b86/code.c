@@ -9,7 +9,11 @@ int main()
         scanf("%d",&ary[i]);
     for(int i=0;i<n;i++)
     {
-        ary[i+1] += ary[(i+2==n)?n:i+2];
-        printf("%d ",ary[i]);
+        sum=0;
+        for(int j=0;j<=i;j++)
+        {
+            sum+=ary[j];
+        }
+        printf("%d",sum);
     }
 }
