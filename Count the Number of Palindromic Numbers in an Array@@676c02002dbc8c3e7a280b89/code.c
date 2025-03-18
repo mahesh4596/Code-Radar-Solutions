@@ -2,6 +2,7 @@
 
 int palidromic(int num)
 {
+    if (num<0) return 0;
     int rev=0,r;
     int n = num;
     while(n!=0)
