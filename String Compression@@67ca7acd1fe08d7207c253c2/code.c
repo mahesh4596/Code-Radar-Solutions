@@ -11,7 +11,7 @@ char compressString(char str[],char compressed[])
         else 
         {  
             compressed[index++] = str[i - 1];  
-            index += printf(&compressed[index], "%d", count);
+            index += sprintf(&compressed[index], "%d", count);
             count = 1;
         }  
     }
