@@ -1,4 +1,4 @@
-char compressed(char str[],int compressed[])
+char compressString(char str[],int compressed[])
 {
     int n = strlen(str);
     int count = 1, index = 0;
