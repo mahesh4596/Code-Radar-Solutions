@@ -18,5 +18,5 @@ int main()
         new_ary[i]=0;
     
     for(int i=0;i<n;i++)
-        printf("%d",new_ary[i]);
+        printf("%d ",new_ary[i]);
 }
