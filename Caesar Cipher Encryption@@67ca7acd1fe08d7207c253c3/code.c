@@ -1,4 +1,4 @@
-char *caesarCipher(char msg[],int shift,int encrypted[])
+char* caesarCipher(char msg[],int shift,int encrypted[])
 {
     int count=0;
     for(int i=0;i<100;i++)
