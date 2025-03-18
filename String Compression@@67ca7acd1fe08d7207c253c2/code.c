@@ -1,7 +1,7 @@
 char compressed(char str[],int compressed[])
 {
     int n = strlen(str);
-    int count = 1;
+    int count = 1, index = 0;
     for(int i=0;i<n;i++)
     {
         if(str[i] == str[i-1])
