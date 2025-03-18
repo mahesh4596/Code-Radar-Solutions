@@ -14,6 +14,6 @@ int main()
         {
             sum+=ary[j];
         }
-        printf("%d",sum);
+        printf("%d ",sum);
     }
 }
