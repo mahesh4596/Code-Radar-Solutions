@@ -24,6 +24,19 @@ int main()
     int arr[n];
     for (int i = 0; i < n; i++)
         scanf("%d", &arr[i]);
+    
+    for(int r = 0;r < n;r++)
+    {
+        for(int c=0;c<n-1-r;c++)
+        {
+            if(arr[c]>arr[c+1])
+            {
+                int temp=arr[c];
+                arr[c]=arr[c+1];
+                arr[c+1]=temp;
+            }
+        }
+    }
 
     printf("%d\n", findSmallestMissing(arr, n));
     return 0;
