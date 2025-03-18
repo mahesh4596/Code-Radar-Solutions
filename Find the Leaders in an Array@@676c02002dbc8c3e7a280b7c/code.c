@@ -2,7 +2,7 @@
 
 void findLeaders(int arr[], int n) 
 {
-    int max_right = arr[n - 1]; 
+    int max_right = arr[0]; 
 
     for (int i = n - 2; i >= 0; i--) 
     {  
@@ -22,7 +22,7 @@ int main()
     int arr[n];
     for (int i = 0; i < n; i++) 
         scanf("%d", &arr[i]);
-        
+
     findLeaders(arr, n);
     return 0;
 }
