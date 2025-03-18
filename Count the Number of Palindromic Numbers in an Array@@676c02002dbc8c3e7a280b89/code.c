@@ -18,12 +18,13 @@ int palidromic(int num)
 
 int main()
 {
-    int n;
+    int n,count = 0;
     scanf("%d",&n);
     int ary[n];
     for(int i=0;i<n;i++)
     {
         scanf("%d",&ary[i]);
-        count += palidromic(ary[i])
+        count += palidromic(ary[i]);
     }
+    printf("%d",count);
 }
