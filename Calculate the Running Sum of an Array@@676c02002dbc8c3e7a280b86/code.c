@@ -9,7 +9,7 @@ int main()
         scanf("%d",&ary[i]);
     for(int i=0;i<n;i++)
     {
-        sum=0;
+        int sum=0;
         for(int j=0;j<=i;j++)
         {
             sum+=ary[j];
