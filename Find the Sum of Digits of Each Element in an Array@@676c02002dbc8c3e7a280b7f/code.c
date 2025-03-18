@@ -14,13 +14,14 @@ int digitSum(int num)
 
 int main()
 {
-    int n,count=0;
+    int n;
     scanf("%d",&n);
     int ary[n];
     for(int i=0;i<n;i++)
     {
         scanf("%d",&ary[i]);
-        count = digitSum(ary[i]);
-        printf("%d ",count);
+        ary[i] = digitSum(ary[i]);
     }
+    for(int i=0;i<n;i++)
+        printf("%d ",ary[i]);
 }
