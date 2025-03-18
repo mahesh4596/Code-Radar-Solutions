@@ -29,6 +29,11 @@ void getFrequence(int ary[], int n)
             maxFreq = count;
             maxElement = ary[i];
         }
+        else if(count == counted[i])
+        {
+            printf("-1");
+            return;
+        }
     }
     printf("%d", maxElement);
 }
