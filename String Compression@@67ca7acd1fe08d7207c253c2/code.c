@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <string.h>
+
 char compressString(char str[],char compressed[])
 {
     int n = strlen(str);
