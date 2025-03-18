@@ -6,7 +6,7 @@ int digitSum(int num)
     while(num!=0)
     {
         r = r%10;
-        sum = (sum*10)+r;
+        sum +=r;
         num=num/10;
     }
     return sum;
