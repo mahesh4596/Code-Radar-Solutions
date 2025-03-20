@@ -17,7 +17,7 @@ int main()
         for(int j=i+1;j<n;j++)
         {
             if((ary[i] + ary[j]) == num)
-                printf("%d %d\n", ary[i],ary[i+1]);
+                printf("%d %d\n", ary[i],ary[j]);
         }
     }
 }
