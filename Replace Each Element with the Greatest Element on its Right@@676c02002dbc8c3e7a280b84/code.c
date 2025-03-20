@@ -1,30 +1,31 @@
 #include <stdio.h>
 #include <limits.h>
 
-int main() {
-    void REWGETR(int *rp, int *p, int n);
-    int n, k;
+int main() 
+{
+    int n;
     scanf("%d", &n);
-    int arr[n], i, j;
-    for(i=0;i<n;i++)
+
+    int arr[n], retarr[n];
+
+    for(int i = 0; i < n; i++)
         scanf("%d", &arr[i]);
 
-    int retarr[n];
-    REWGETR(&retarr[0], &arr[0], n);
-    for(i=0;i<n;i++)
-        printf("%d ", retarr[i]);
-}
-
-void REWGETR(int *rp, int *p, int n) {
-    int i, j, max;
-    for(i=0;i<n;i++) 
+    for(int i = 0; i < n; i++) 
     {
-        max = INT_MIN;
-        for(j=i+1;j<n;j++) 
+        int max = INT_MIN;
+        for(int j = i + 1; j < n; j++) 
         {
-            if (max<*(p+j)) 
-                max = *(p+j);
+            if(arr[j] > max) 
+            {
+                max = arr[j];
+            }
         }
-        *(rp+i)=(max == INT_MIN)?-1: max;
+        retarr[i] = (max == INT_MIN) ? -1 : max;
     }
+
+    for(int i = 0; i < n; i++)
+        printf("%d ", retarr[i]);
+
+    return 0;
 }
