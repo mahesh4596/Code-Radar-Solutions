@@ -10,11 +10,11 @@ int main()
         printf("32");
         return 0;
     }
-    
+
     while((n & 1) == 0)
     {
         count++;
-        s>>=1;
+        n>>=1;
     }
     printf("%d",count);
 }
