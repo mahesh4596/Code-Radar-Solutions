@@ -11,7 +11,8 @@ void findLeaders(int arr[], int n)
             max_right = arr[i];  
             printf("%d ", max_right);
         }  
-    }  
+    }
+    printf("%d %d",arr[n-2],arr[n-1]);  
 }
 
 int main() 
