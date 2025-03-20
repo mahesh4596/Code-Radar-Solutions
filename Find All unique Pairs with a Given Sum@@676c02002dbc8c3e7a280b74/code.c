@@ -14,9 +14,10 @@ int main()
 
     for(int i=0;i<n;i++)
     {
-        if((ary[i] + ary[i+1]) == num)
+        for(int j=i+1;j<n;j++)
         {
-            printf("%d %d\n", ary[i],ary[i+1]);
+            if((ary[i] + ary[i+1]) == num)
+                printf("%d %d\n", ary[i],ary[i+1]);
         }
     }
 }
