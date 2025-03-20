@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 
 int main() {
     void REWGETR(int *rp, int *p, int n);
@@ -16,11 +17,14 @@ int main() {
 
 void REWGETR(int *rp, int *p, int n) {
     int i, j, max;
-    for(i=0;i<n;i++) {
+    for(i=0;i<n;i++) 
+    {
         max = INT_MIN;
-        for(j=i+1;j<n;j++) {
-            if (max<*(p+j)) max = *(p+j);
+        for(j=i+1;j<n;j++) 
+        {
+            if (max<*(p+j)) 
+                max = *(p+j);
         }
-        *(rp+i)=(max==-999999)?-1: max;
+        *(rp+i)=(max == INT_MIN)?-1: max;
     }
 }
