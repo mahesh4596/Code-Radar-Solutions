@@ -11,12 +11,12 @@ int main()
 
     int num;
     scanf("%d",&num);
-    
+
     for(int i=0;i<n;i++)
     {
         if((ary[i] + ary[i+1]) == num)
         {
-            printf("%d %d", ary[i],ary[i+1]);
+            printf("%d %d\n", ary[i],ary[i+1]);
         }
     }
 }
