@@ -8,7 +8,7 @@ void swap(char *a, char *b) {
 
 int getMinLoc(char ary[], int beg, int size) {
     int loc = beg;
-    for (int i = beg + 1; i < size; i++) {
+    for (int i = beg ; i < size; i++) {
         if (ary[i] < ary[loc]) {
             loc = i;
         }
