@@ -25,5 +25,4 @@ void printPrimesInRange(int start, int end)
     }
     if(!c)
         printf("No prime numbers");
-    printf("\n");
 }
