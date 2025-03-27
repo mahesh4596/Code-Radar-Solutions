@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <limits.h>
 
 int main()
 {
-    int n;
+    int n,min=INT_MAX;
     scanf("%d",&n);
     int ary[n];
     
@@ -17,15 +18,13 @@ int main()
 
     for(int r=0;r<n;r++)
     {
-        for(int c=0;c<n-1-r;c++)
+        for(int c=i+1;c<n;c++)
         {
-            if(ary[c]>ary[c+1])
+            if((ary[j] - ary[j]) > min)
             {
-                int temp = ary[c];
-                ary[c] = ary[c+1];
-                ary[c+1] = temp;
+                min = ary[j] - ary[i];
+                printf("%d %d",ary[i],ary[j]);
             }
         }
     }
-    printf("%d %d",ary[n-2],ary[n-1]);
 }
