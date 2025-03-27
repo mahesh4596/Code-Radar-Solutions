@@ -1,13 +1,14 @@
-int maxGadgetSpend(int keyboards[],int n,int headsets[],int m,int budget)
+int maxGadgetSpend(int keyboards[], int n, int headsets[], int m, int budget) 
 {
-    for(int i = 0;i < n;i++)
+    int max_spent = -1;
+
+    for (int i = 0; i < n; i++) 
     {
-        for(int j = 0;j < m;j++)
+        for (int j = 0; j < m; j++) 
         {
-            if((keyboards[i] + headsets[j]) < budget)
-            {
-                return (keyboards[i] + headsets[j]);
-            }
+            int total_cost = keyboards[i] + headsets[j];
+            if (total_cost <= budget && total_cost > max_spent)
+                return max_spent;
         }
     }
     return -1;
