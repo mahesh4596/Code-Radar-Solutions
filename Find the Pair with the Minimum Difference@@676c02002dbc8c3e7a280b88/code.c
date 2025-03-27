@@ -20,7 +20,7 @@ int main()
     {
         for(int j=i+1;j<n;j++)
         {
-            if((ary[j] - ary[i]) > min)
+            if((ary[j] - ary[i]) < min)
             {
                 min = ary[j] - ary[i];
                 printf("%d %d",ary[i],ary[j]);
