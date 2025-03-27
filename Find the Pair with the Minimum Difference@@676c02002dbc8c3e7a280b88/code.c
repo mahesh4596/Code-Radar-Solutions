@@ -16,11 +16,11 @@ int main()
     for(int i=0;i<n;i++)
         scanf("%d",&ary[i]);
 
-    for(int r=0;r<n;r++)
+    for(int i=0;i<n;i++)
     {
-        for(int c=i+1;c<n;c++)
+        for(int j=i+1;j<n;j++)
         {
-            if((ary[j] - ary[j]) > min)
+            if((ary[j] - ary[i]) > min)
             {
                 min = ary[j] - ary[i];
                 printf("%d %d",ary[i],ary[j]);
