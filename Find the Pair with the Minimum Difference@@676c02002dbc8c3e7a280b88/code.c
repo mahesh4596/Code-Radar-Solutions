@@ -3,7 +3,7 @@
 
 int main()
 {
-    int n;
+    int n,num1,num2;
     scanf("%d",&n);
     int ary[n];
     
