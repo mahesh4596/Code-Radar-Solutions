@@ -3,7 +3,7 @@
 
 int main()
 {
-    int n,num1,num2;
+    int n;
     scanf("%d",&n);
     int ary[n];
     
@@ -30,6 +30,7 @@ int main()
     }
 
     int min = abs(ary[0] - ary[1]);
+    int num1 = ary[0],num2 = ary[1];
     for(int i = 0;i < n;i++)
     {
         int diff = abs(ary[i+1] - ary[i]);
