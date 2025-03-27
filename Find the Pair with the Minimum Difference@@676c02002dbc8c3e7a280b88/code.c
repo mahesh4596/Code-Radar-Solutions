@@ -11,7 +11,7 @@ int main()
         printf("-1");
         return 0;
     }
-    
+
     for(int i=0;i<n;i++)
         scanf("%d",&ary[i]);
 
@@ -27,5 +27,5 @@ int main()
             }
         }
     }
-    printf("%d %d",ary[0],ary[1]);
+    printf("%d %d",ary[n-2],ary[n-1]);
 }
