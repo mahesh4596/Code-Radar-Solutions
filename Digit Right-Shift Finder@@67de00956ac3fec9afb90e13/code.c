@@ -5,11 +5,9 @@
 int digitRightShift(int num) 
 {
     char str[20];
-    int len;
     sprintf(str, "%d", num);
     
-    // int len = strlen(str);
-    for(int len = 0;str[len]!='\0';len++);
+    int len = strlen(str);
     
     if (len == 1)
         return num;
@@ -20,9 +18,8 @@ int digitRightShift(int num)
     {
         str[i] = str[i - 1];
     }
-
+    
     str[0] = lastDigit;
-
     return atoi(str);
 }
 
