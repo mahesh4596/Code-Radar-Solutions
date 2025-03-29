@@ -4,7 +4,7 @@ int nextPrimeDigit(int digit)
     else if (digit < 3) return 3;
     else if (digit < 5) return 5;
     else if (digit < 7) return 7;
-    else return 7;
+    // else return 7;
 }
 
 int incrementToPrimeDigits(int num) 
