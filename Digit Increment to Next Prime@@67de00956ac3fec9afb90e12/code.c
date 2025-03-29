@@ -1,6 +1,5 @@
 int nextPrimeDigit(int digit) 
 {
-    if(digit == 0) return 2;
     if (digit < 2) return 2;
     if (digit < 3) return 3;
     if (digit < 5) return 5;
@@ -11,7 +10,8 @@ int nextPrimeDigit(int digit)
 int incrementToPrimeDigits(int num) 
 {
     int result = 0, place = 1;
-
+    if(num == 0)
+        return 2;
     while (num > 0) 
     {
         int digit = num % 10;
