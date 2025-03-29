@@ -1,5 +1,6 @@
 int nextPrimeDigit(int digit) 
 {
+    if(digit == 0) return 0;
     if (digit < 2) return 2;
     if (digit < 3) return 3;
     if (digit < 5) return 5;
