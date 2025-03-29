@@ -6,6 +6,6 @@ int calculatePenalty(int subday,int submonth,int subyear,int dueday,int duemonth
     else if(duemonth != submonth)
         penalty = (submonth - duemonth) * 200;
     else
-        penalty = (subday - dueday) * 10;
+        penalty = (dueday - subday) * 10;
     return penalty;
 }
