@@ -2,7 +2,7 @@
 
 int findSmallestMissing(int arr[], int n) 
 {
-    int left = 1, right = n - 1;
+    int left = 0, right = n - 1;
 
     while (left <= right) {
         int mid = left + (right - left) / 2;
