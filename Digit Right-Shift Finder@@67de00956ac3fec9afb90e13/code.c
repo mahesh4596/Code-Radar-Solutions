@@ -12,6 +12,6 @@ int digitRightShift(int num)
     str[0] = str[len - 1];
     str[len - 1] = temp;
 
-    int num = atoi(str);
+    num = atoi(str);
     return num;
 }
