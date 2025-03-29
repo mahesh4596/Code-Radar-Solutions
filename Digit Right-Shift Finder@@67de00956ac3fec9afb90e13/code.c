@@ -26,13 +26,3 @@ int digitRightShift(int num)
     return atoi(str);
 }
 
-int main() 
-{
-    int num;
-    scanf("%d", &num);
-
-    int shiftedNum = digitRightShift(num);
-    printf("%d\n", shiftedNum);
-
-    return 0;
-}
