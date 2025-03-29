@@ -12,7 +12,7 @@ int mountainPeak(int num)
     for(int i=1;i<len;i++)
     {
         if(str[i] > str[i+1] && str[i] > str[i - 1])
-            return str[i];
+            return (str[i] - '0');
     }
     return -1;
 }
