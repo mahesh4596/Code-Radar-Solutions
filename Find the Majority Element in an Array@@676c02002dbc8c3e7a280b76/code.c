@@ -2,7 +2,7 @@
 
 void getFrequence(int ary[], int n) 
 {
-    int maxFreq = n/2;;
+    int maxFreq = n/2,maxElement = ary[0];
 
     for (int i = 0; i < n; i++) 
     {
