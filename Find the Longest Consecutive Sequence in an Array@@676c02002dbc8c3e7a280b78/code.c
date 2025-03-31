@@ -23,7 +23,7 @@ int main()
     }
 
     int maxlen = 1, currlen = 1;
-    for(int i = 0;i < n;i++)
+    for(int i = 1;i < n;i++)
     {
         if(ary[i] == ary[i - 1])
             continue;
