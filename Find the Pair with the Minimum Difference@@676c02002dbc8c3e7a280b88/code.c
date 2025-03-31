@@ -16,18 +16,18 @@ int main()
     for(int i=0;i<n;i++)
         scanf("%d",&ary[i]);
 
-    // for(int r=0;r<n;r++)
-    // {
-    //     for(int c=0;c<n-1-r;c++)
-    //     {
-    //         if(ary[c] > ary[c+1])
-    //         {
-    //             int temp = ary[c];
-    //             ary[c] = ary[c+1];
-    //             ary[c+1] = temp;
-    //         }
-    //     }
-    // }
+    for(int r=0;r<n;r++)
+    {
+        for(int c=0;c<n-1-r;c++)
+        {
+            if(ary[c] > ary[c+1])
+            {
+                int temp = ary[c];
+                ary[c] = ary[c+1];
+                ary[c+1] = temp;
+            }
+        }
+    }
 
     int min = abs(ary[0] - ary[1]);
     int num1 = ary[0],num2 = ary[1];
