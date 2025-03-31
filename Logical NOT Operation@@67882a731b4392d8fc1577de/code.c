@@ -3,8 +3,8 @@
 int main() {
     int a;
     scanf("%i",&a);
-    if(!(a>0))
-        printf("True");
-    else
+    if((a>0))
         printf("False");
+    else
+        printf("True");
 }
