@@ -2,19 +2,11 @@
 
 void getFrequence(int ary[], int n) 
 {
-    int counted[n]; 
-    for (int i = 0; i < n; i++) 
-    {
-        counted[i] = 0;
-    }
 
     int maxFreq = 0, maxElement = ary[0];
 
     for (int i = 0; i < n; i++) 
     {
-        if (counted[i]) 
-            continue;
-
         int count = 1;
         for (int j = i + 1; j < n; j++) 
         {
