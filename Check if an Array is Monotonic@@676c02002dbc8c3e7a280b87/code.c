@@ -18,7 +18,7 @@ int main()
     {
         for(int j = i + 1;j<n;j++)
         {
-            if(ary[j] > ary[i] || ary[j] < ary[i] && ary[j] < ary[j+1])
+            if(ary[j] > ary[i] || ary[j] < ary[i])
             {
                 printf("YES");
                 return 0;
