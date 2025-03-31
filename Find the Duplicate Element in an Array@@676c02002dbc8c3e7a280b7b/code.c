@@ -13,7 +13,6 @@ void getFrequence(int ary[], int n)
             if (ary[i] == ary[j]) 
             {
                 count++;
-                counted[j] = 1; 
             }
         }
         if (count > maxFreq) 
