@@ -2,40 +2,27 @@
 
 void getFrequence(int ary[], int n) 
 {
-    int counted[n]; 
-    for (int i = 0; i < n; i++) 
-    {
-        counted[i] = 0;
-    }
-
-    int maxFreq = 0, maxElement = ary[0];
+    int maxFreq = n/2;;
 
     for (int i = 0; i < n; i++) 
     {
-        if (counted[i]) 
-            continue;
-
-        int count = 1;
+        int count = 0;
         for (int j = i + 1; j < n; j++) 
         {
             if (ary[i] == ary[j]) 
             {
-                count++;
-                counted[j] = 1; 
+                count++; 
             }
         }
         if (count > maxFreq) 
         {
-            maxFreq = count;
             maxElement = ary[i];
         }
-        else if(count == counted[i])
-        {
-            printf("-1");
-            return;
-        }
     }
-    printf("%d", maxElement);
+    if(maxElement!=0)
+        printf("%d", maxElement);
+    else 
+        printf("-1");
 }
 
 int main() {
