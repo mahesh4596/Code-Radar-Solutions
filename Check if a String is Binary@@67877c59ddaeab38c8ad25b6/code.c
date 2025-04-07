@@ -13,7 +13,7 @@ int main()
             jasoos = 0;
         }
     }
-    if(jasoos == 1)
+    if(jasoos == 0)
         printf("Yes");
     else 
         printf("No");
