@@ -13,11 +13,7 @@ int main()
             jasoos = 0;
             break;
         }
-        if(str[i] == str[i + 1])
-        {
-            printf("Yes");
-            return 0;
-        }
+    
     }
     if(jasoos == 1)
         printf("Yes");
