@@ -8,13 +8,13 @@ int main()
     fgets(str,sizeof(str),stdin);
     for(int i = 0; str[i] != '0'; i++)
     {
-        if(str[i] != 1 || str[i] != 0)
+        if(str[i] != '1' || str[i] != '0')
         {
             jasoos = 0;
             break;
         }
     }
-    if(jasoos == 0)
+    if(jasoos == 1)
         printf("Yes");
     else 
         printf("No");
