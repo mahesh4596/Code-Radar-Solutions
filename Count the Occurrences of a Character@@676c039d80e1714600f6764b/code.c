@@ -3,14 +3,17 @@
 
 int main() 
 {
-    char str[100],s[1];
-    int v=0;
-    fgets(str,sizeof(str),stdin);
-    fgets(s,sizeof(s),stdin);
-    for(int i=0;str[i]!='\0';i++)
+    char str[100], ch;
+    int count = 0;
+    fgets(str, sizeof(str), stdin);
+    scanf(" %c", &ch); 
+
+    for (int i = 0; str[i] != '\0'; i++) 
     {
-        if(str[i] == s[0])
-            v++;
+        if (str[i] == ch)
+            count++;
     }
-    printf("%d",v);
+
+    printf("%d\n", count);
+    return 0;
 }
