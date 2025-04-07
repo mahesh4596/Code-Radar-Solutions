@@ -11,6 +11,7 @@ int main()
         if(str[i] != 1 || str[i] != 0)
         {
             jasoos = 0;
+            break;
         }
     }
     if(jasoos == 0)
