@@ -8,13 +8,23 @@ int main()
 
     for (int i = 0; str[i] != '\0'; i++) 
     {
-        for(int j = i + 1; str[i] != '\0'; j++)
+        int isUnique = 1;
+        for (int j = 0; str[j] != '\0'; j++) 
         {
-            if(str[i] != str[j])
+            if (i != j && str[i] == str[j]) 
             {
-                printf("%c",str[i]);
-                return 0;
+                isUnique = 0;
+                break;
             }
         }
+
+        if (isUnique) 
+        {
+            printf("%c\n", str[i]);
+            return 0;
+        }
     }
+
+    printf("-");
+    return 0;
 }
