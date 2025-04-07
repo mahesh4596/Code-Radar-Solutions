@@ -9,7 +9,7 @@ int main()
     fgets(s,sizeof(s),stdin);
     for(int i=0;str[i]!='\0';i++)
     {
-        if(str[i] == s)
+        if(str[i] == s[i])
             v++;
     }
     printf("%d",v);
