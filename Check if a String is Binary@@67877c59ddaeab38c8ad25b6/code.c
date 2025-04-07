@@ -5,18 +5,22 @@ int main()
 {
     char str[100];
     int jasoos = 1;
-    fgets(str,sizeof(str),stdin);
-    for(int i = 0; str[i] != '0'; i++)
+
+    fgets(str, sizeof(str), stdin);
+
+    for(int i = 0; str[i] != '\0'; i++)
     {
-        if(str[i] != '1' && str[i] != '0')
+        if(str[i] != '0' && str[i] != '1')
         {
             jasoos = 0;
             break;
         }
-    
     }
+
     if(jasoos)
-        printf("Yes");
+        printf("Yes\n");
     else 
-        printf("No");
+        printf("No\n");
+
+    return 0;
 }
