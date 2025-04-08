@@ -8,9 +8,14 @@ int main()
 
     for(int i = 0; str[i] != '\0'; i++)
     {
-        if(str[i] >= 47 && str[i] <= 56)
-            printf("%c",str[i]);
-        if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u')
-            printf("%c", str[i]);
+        char ch = str[i];
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+            ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ||
+            (ch < 'A') || (ch > 'Z' && ch < 'a') || (ch > 'z'))
+        {
+            printf("%c", ch);
+        }
     }
+
+    return 0;
 }
