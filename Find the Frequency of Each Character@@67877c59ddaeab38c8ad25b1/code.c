@@ -1,31 +1,21 @@
 #include <stdio.h>
 #include <string.h>
 
-int countSubstringOccurrences(char str[], char sub[]) 
+int main()
 {
-    int count = 0;
-    char *pos = str;
-    
-    while ((pos = strstr(pos, sub)) != NULL) 
-    {
-        count++;
-        pos++;  
-    }
-    return count;
-}
-
-int main() {
-    char str[100], sub[50];
-
+    char str[100];
     fgets(str, sizeof(str), stdin);
-    fgets(sub, sizeof(sub), stdin);
 
-    str[strcspn(str, "\n")] = '\0';  
-    sub[strcspn(sub, "\n")] = '\0';  
-
-    int occurrences = countSubstringOccurrences(str, sub);
-
-    printf("%s: %d\n", sub, occurrences);
+    for(int i = 0; str[i] != '\0'; i++)
+    {
+        int count = 0;
+        for(int j = 0; str[j] != '\0'; j++)
+        {
+            if(str[i] == str[j])
+                count++;
+        }
+        printf("%c: %d",str[i],count);
+    }
 
     return 0;
 }
