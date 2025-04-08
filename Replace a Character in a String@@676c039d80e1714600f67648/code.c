@@ -4,7 +4,7 @@
 int main()
 {
     char str[200];
-    fgets(str, sizeof(str1), stdin);
+    fgets(str, sizeof(str), stdin);
     scanf("%c",&c);
     scanf("%c",&rc);
 
