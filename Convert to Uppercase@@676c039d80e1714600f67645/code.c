@@ -8,6 +8,9 @@ int main()
     
     for(int i = 0; str[i] != '\0'; i++)
     {
-        printf("%c",str[i] - 32);
+        if((!(str[i] >= 97)) || (!(str[i] <= 56)))
+            printf("%c",str[i]);
+        else
+            printf("%c",str[i] - 32);
     }
 }
