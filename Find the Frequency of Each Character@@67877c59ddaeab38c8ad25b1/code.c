@@ -16,7 +16,7 @@ int main()
         if (counted[i]) 
             continue;
 
-        int count = 1;
+        int count = 0;
         for(int j = 0; str[j] != '\0'; j++)
         {
             if(str[i] == str[j])
