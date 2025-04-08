@@ -13,8 +13,8 @@ int main()
         {
             if(str[i] == str[j])
                 count++;
-            printf("%c: %d\n",str[j],count);
         }
+        printf("%c: %d\n",str[i],count);
     }
 
 }
