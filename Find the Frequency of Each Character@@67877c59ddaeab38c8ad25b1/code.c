@@ -6,6 +6,7 @@ int main()
     char str[100];
     fgets(str, sizeof(str), stdin);
 
+    int n = strlen(str);
     int counted[n] ; 
     for (int i = 0; i < n; i++)
         counted[i] = 0;
