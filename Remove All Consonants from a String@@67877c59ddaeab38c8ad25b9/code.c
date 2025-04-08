@@ -8,6 +8,8 @@ int main()
 
     for(int i = 0; str[i] != '\0'; i++)
     {
+        if(str[i] >= 47 && str[i] <= 56)
+            printf("%c",str[i]);
         if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u')
             printf("%c", str[i]);
     }
