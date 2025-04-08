@@ -4,15 +4,14 @@
 int main()
 {
     char str1[200], str2[100];
+
     fgets(str1, sizeof(str1), stdin);
     fgets(str2, sizeof(str2), stdin);
 
-    int len1 = strlen(str1);
-    int i;
+    str1[strcspn(str1, "\n")] = '\0';
+    str2[strcspn(str2, "\n")] = '\0';
 
-    for (i = 0; str2[i] != '\0'; i++)
-        str1[len1 + i] = str2[i];
-    str1[len1 + i] = '\0';
+    strcat(str1, str2);
 
     printf("%s", str1);
     return 0;
