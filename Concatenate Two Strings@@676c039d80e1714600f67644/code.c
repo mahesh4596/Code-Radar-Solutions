@@ -7,9 +7,9 @@ int main()
     fgets(str1,sizeof(str1),stdin);
     fgets(str2,sizeof(str2),stdin);
     int i;
-    for(i = 0;str1[i]!='\0';i++)
+    for(i = 0;i<strlen(str1);i++)
         printf("%c",str1[i]);
 
-    for(i = 0;str2[i]!='0';i++)
+    for(i = 0;i<strlen(str2);i++)
         printf("%c",str2[i]);
 }
