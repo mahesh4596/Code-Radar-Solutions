@@ -19,10 +19,9 @@ char compressString(char str[],char compressed[])
         }  
     }
     compressed[index] = '\0';  
-    if (index >= n) {
+    if (index >= n) 
         printf("%s\n", str);
-    } else {
+    else 
         printf("%s\n", compressed);
-    }
 
 }
