@@ -33,6 +33,9 @@ int main()
         }
         
     }
-    printf("%c",maxcharacter);
+    if(maxFreq != 0)
+        printf("%c",maxcharacter);
+    else 
+        printf("%c",str[n-1]);
 
 }
