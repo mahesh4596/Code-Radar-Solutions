@@ -7,7 +7,7 @@ int main()
     fgets(str, sizeof(str), stdin);
 
     int n = strlen(str);
-    int counted[n] ; 
+    int counted[n]; 
     for (int i = 0; i < n; i++)
         counted[i] = 0;
 
